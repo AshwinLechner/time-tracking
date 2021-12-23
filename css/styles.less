@@ -1,0 +1,54 @@
+@import "variables";
+
+body {
+  background-color: @main-bg-color;
+  #container {
+    margin: 20% 15%;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 15px;
+    height: 50vh;
+    .card {
+      border-radius: 15px;
+      background-color: @card-color-main;
+      display: flex;
+      flex-direction: column;
+      img {
+        float: right;
+      }
+      .card-top {
+        z-index: 1;
+        height: 50px;
+        background-color: crimson;
+        border-radius: 20px;
+      }
+      .card-bot {
+        z-index: 2;
+        text-align: center;
+      }
+      .work-card-color {
+        background-color: @work-color;
+      }
+
+      .play-card-color {
+        background-color: @play-color;
+      }
+      .study-card-color {
+        background-color: @study-color;
+      }
+      .exercise-card-color {
+        background-color: @exercise-color;
+      }
+      .social-card-color {
+        background-color: @social-color;
+      }
+      .self-care-card-color {
+        background-color: @self-care-color;
+      }
+    }
+
+    .main-card {
+      grid-row: 1/3;
+    }
+  }
+}

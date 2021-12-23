@@ -1,0 +1,50 @@
+body {
+  background-color: hsl(226, 43%, 10%);
+}
+body #container {
+  margin: 20% 15%;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 15px;
+  height: 50vh;
+}
+body #container .card {
+  border-radius: 15px;
+  background-color: hsl(235, 46%, 20%);
+  display: flex;
+  flex-direction: column;
+}
+body #container .card img {
+  float: right;
+}
+body #container .card .card-top {
+  z-index: 1;
+  height: 50px;
+  background-color: crimson;
+  border-radius: 20px;
+}
+body #container .card .card-bot {
+  z-index: 2;
+  text-align: center;
+}
+body #container .card .work-card-color {
+  background-color: hsl(15, 100%, 70%);
+}
+body #container .card .play-card-color {
+  background-color: hsl(195, 74%, 62%);
+}
+body #container .card .study-card-color {
+  background-color: hsl(348, 100%, 68%);
+}
+body #container .card .exercise-card-color {
+  background-color: hsl(145, 58%, 55%);
+}
+body #container .card .social-card-color {
+  background-color: hsl(264, 64%, 52%);
+}
+body #container .card .self-care-card-color {
+  background-color: hsl(43, 84%, 65%);
+}
+body #container .main-card {
+  grid-row: 1/3;
+}
